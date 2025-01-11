@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Level Rise Simulation</title>
+    <link rel="stylesheet" href="world map.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #map {
+        height: 100vh;
+        width: 100%;
+      }
+      .control-panel {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+      .slider {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="control-panel">
+      <label for="seaLevel">Sea Level Rise (meters):</label>
+      <input
+        type="range"
+        id="seaLevel"
+        class="slider"
+        min="0"
+        max="10"
+        value="0"
+        step="0.1"
+      />
+      <span id="seaLevelValue">0 m</span>
+    </div>
+
+    <script src="map & funcation.js"></script>
+    <script src="bostock.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
